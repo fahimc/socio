@@ -1,0 +1,150 @@
+/* CSS file placeholder. */
+html,body
+{
+	width:100%;
+	padding: 0;
+	margin: 0;
+	height:100%;
+}
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #999999;
+}
+
+
+nav{
+	display: inline-block;
+	width:80px;
+	height: 100%;
+	background-color: #f9f9fa;
+	border-right:1px solid #ccc;
+	text-align: center;
+	overflow-y:auto; 
+}
+nav div{
+	margin-top: 20px;
+	margin-left: 9px;
+	cursor: pointer;
+	position: relative;
+}
+webview
+{
+
+	display:none;
+	width:calc(100% - 85px);
+	height:100%;
+}
+webview.show
+{
+	display:  inline-block;
+}
+.whatsapp{
+background: url(assets/buttons.png);
+width: 60px;
+height: 60px;
+}
+nav div:hover, nav div.selected{
+	background-position-x: -60px ;
+}
+.hangouts{
+background: url(assets/buttons.png);
+width: 60px;
+height: 67px;
+background-position-y: -60px;
+}
+
+.skype{
+background: url(assets/buttons.png);
+width: 60px;
+height: 58px;
+background-position-y: -127px;
+}
+.messenger{
+background: url(assets/buttons.png);
+width: 60px;
+height: 61px;
+background-position-y: -305px;
+}
+.facebook{
+background: url(assets/buttons.png);
+width: 60px;
+height: 60px;
+background-position-y: -185px;
+}
+.instagram{
+background: url(assets/buttons.png);
+width: 60px;
+height: 60px;
+background-position-y: -245px;
+}
+counter{
+	display: none;
+	position: absolute;
+    top: 10px;
+    right: 1px;
+    min-width: 8px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: -11px;
+    padding: 0 6px;
+    font-weight: normal;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    background: #e23442;
+    border: 1px solid #911f28;
+    border-radius: 11px;
+    background-image: -webkit-linear-gradient(top, #e8616c, #dd202f);
+    background-image: -moz-linear-gradient(top, #e8616c, #dd202f);
+    background-image: -o-linear-gradient(top, #e8616c, #dd202f);
+    background-image: linear-gradient(to bottom, #e8616c, #dd202f);
+    -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
+}
+counter.show{
+	display: block;
+}
+
+
+.reload {
+  height: 2em;
+  padding: .25em;
+  width: 2em;
+  margin-left: 25px;
+}
+  .reload:before, .reload:after {
+    content: '';
+    display: block;
+  }
+  .reload:before {
+    border-color: transparent #666 #666 #666;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    height: 1.5em;
+    width: 1.5em;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .reload:after {
+    border-color: transparent transparent transparent #666;
+    border-style: solid;
+    border-width: .3125em 0 .3425em .5em;
+    height: 0;
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    width: 0;
+  }
